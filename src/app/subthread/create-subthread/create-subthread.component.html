@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+      <div class="create-subthread-container">
+        <form class="post-form" [formGroup]="createSubthreadForm" (ngSubmit)="createSubthread()">
+          <div class="form-group">
+            <div class="create-subthread-heading">Создать сабтред</div>
+          
+            <input type="text" [formControlName]="'title'" class="form-control" style=" width: 518px;margin-top: 5px;    border-radius: 22.5px !important; background-color: transparent;
+            "
+              placeholder="название">
+            <textarea type="text" [formControlName]="'description'" class="text" style="font-size:12px; width: 518px; margin-top: 5px; height: 20vh;     border-radius: 22.5px !important; border-color: #404040; padding-top: 15px; padding-left: 10px; background-color: transparent;
+            "
+              placeholder=" описание"></textarea>
+            <div>
+              <div style="margin-top: 5px" class="float-right">
+                <button (click)="discard()" class="btnDiscard">Отмена</button>
+                <button class="btnCreateSubthread">Создать</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <div class="sidebar">
+          <h5 class="guidelines">Запостить</h5>
+          <ul>
+            <li>Помните о человечности</li>
+            <li>Поступайте хорошо</li>
+            <li>Никакого спама</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

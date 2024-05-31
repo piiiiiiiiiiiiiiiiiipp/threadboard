@@ -1,0 +1,127 @@
+.create-subthread-container {
+    margin-left: 300px;
+    margin-top: 10px;
+    --post-line-color: #404040;
+    /* border: 1px solid #404040; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    color: #404040;
+    position: relative;
+    border-radius: 4px;
+    padding: 5px;
+    overflow-x: hidden;
+    max-width: 900px;
+  }
+  body{
+    background-color: #1B1B1B;
+    height: 100vh; 
+    background-image: url('../../../assets/BG.png') !important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-blend-mode: soft-light;
+    background-size: 40%;
+    overflow-y: hidden;
+    text-decoration: none;
+    color:#fff;
+  }
+.bodydiv{
+    color: #181818;
+    backdrop-filter: blur(8px) opacity(90%) !important;
+  }
+  
+  .create-subthread-heading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: aliceblue;
+    -ms-flex: 1;
+    flex: 1;
+    padding-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .btnCreateSubthread {
+    background-color: #31F188;
+    border-color: #31F188;
+    fill: #31F188;
+    border: 1px solid;
+    /* border-color: #31F188; */
+    border-radius: 22.5px !important;
+    text-align: center;
+    color: #1c1c1c;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 244px;
+    height: 34px;
+    margin-left: 30px;
+
+  }
+  
+  .btnDiscard {
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 22.5px !important;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 244px;
+    height: 34px;
+    margin-top: 5px;
+    color: #31F188;
+    background-color: transparent;
+  }
+  .post-form{
+    max-width: 900px;
+  }
+  .guidelines {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: red;
+    font-stretch: semi-expanded;
+    background-color: transparent;
+  }
+  
+  .sidebar {
+    margin-left: 425px;
+
+    width: 242px;
+    height: 150px;
+    --post-line-color: #ccc;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: transparent;
+    color: #878A8C;
+    position: relative;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .form-control {
+    background-color: #1c1c1c;
+    font-size: 12px;
+    
+  }
+  .textarea{
+    background-color: #1b1b1b;
+    font-size: 12px;
+  }

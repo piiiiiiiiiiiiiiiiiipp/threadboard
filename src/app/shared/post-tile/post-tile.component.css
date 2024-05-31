@@ -1,0 +1,119 @@
+ .post{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color:#181818;
+    background-blend-mode: soft-light;
+    backdrop-filter: opacity(90%);
+    color: #878A8C;
+    position: relative;
+    border-radius: 23px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+hr {
+    color: #404040;
+    opacity: 30%;
+    margin: 10px 0 !important;
+}
+.login{
+    margin-left: 15px;
+    color: #31F188;
+    border-radius: 22.5px !important;
+    background-color: transparent;
+    border-color: #31F188;
+    border: 1px solid #31F188;
+}
+.btnCommments{
+    
+    border-radius: 2px solid;       
+    color: #87848c;
+    opacity: 1;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btnCommments:hover{
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.post-title{
+    font-size: 26px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.posturl, .postname{    
+    color: white;
+    text-decoration: none;
+}
+
+.subthread-text{
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.usernamespan{
+    font-size: 14px;
+    text-decoration: none;
+}
+a.username{
+  text-decoration: none;
+  color: #31F188;
+}
+.post-text{
+    margin-top: 10px;
+}
+.durationspan{
+    font-size: 14px;
+}
+/* .post {
+    background-color: #181818;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .post-content {
+    padding: 15px;
+    color: #FFFFFF;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .post-text {
+    color: #404040;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .btnCommments {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .login {
+    background-color: #31F188;
+    border-color: #31F188;
+    color: #111111;
+  }
+  
+  .login:hover {
+    background-color: #27d47a;
+    border-color:#404040
+} */

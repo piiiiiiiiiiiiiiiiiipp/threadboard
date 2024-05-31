@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+      
+      <div class="create-post-container col-md-9">
+        <form [formGroup]="postCreateForm" class="post-form" (ngSubmit)="postCreate()">
+          <div class="form-group">
+            <div class="create-post-heading">Создать пост</div>
+            <input type="text" [formControlName]="'postName'" class="form-control" style="margin-top: 5px"
+              placeholder="название">
+  
+            <input type="text" class="form-control" [formControlName]="'url'" style="margin-top: 5px" placeholder="URL">
+  
+            <select class="form-control" style="margin-top: 10px" [formControlName]="'subthreadName'">
+              <option value="" selected disabled>выбрать сабтред</option>
+              <option *ngFor="let subthread of subthreads">{{subthread.name}}</option>
+            </select>
+  
+            <editor apiKey="deeepb3sdyrjg6e9zucqrhhiu499ldi3im3e0ed21yjg0ekw"  [formControlName]="'description'" [init]="{
+                        autoresize_bottom_margin: 50,
+                        height: 300,
+                        content_style: '.tox-editor-header{background-color: #1b1b1b; color:aliceblue;}',
+                        license_key: 'gpl',
+                        menubar: false,
+                        plugins: [
+                          'link', 'paste', 'table','**autoresize**',
+                          'advlist autolink lists link image charmap print preview anchor',
+                          'searchreplace visualblocks code fullscreen',
+                          'insertdatetime media table paste code help wordcount'
+                        ],
+                        toolbar:
+                          'undo redo | formatselect | bold italic backcolor | \
+                          alignleft aligncenter alignright alignjustify | \
+                          bullist numlist outdent indent | removeformat | help',
+
+                      }"></editor>
+            <span>
+              <div style="margin-top: 5px" class="float-right">
+                <button (click)="discardPost()" class="btnDiscard">Отмена</button>
+                <button (click)="postCreate()" class="btnCreatePost">Создать</button>
+              </div>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

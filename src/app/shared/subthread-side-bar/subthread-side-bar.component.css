@@ -1,0 +1,27 @@
+.sidebar-view-subthread {
+    width: 312px;
+    height: 242px;
+    --post-line-color: #404040;
+    /* border: 1px solid #404040; */
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #181818;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    border-radius: 23px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+  }
+  
+  .sidebar-view-subthread {
+    height: 280px;
+  }
+ 
+  a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 13px;
+  }

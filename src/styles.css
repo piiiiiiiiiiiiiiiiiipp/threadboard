@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+/* @import '../node_modules/ngx-toastr/toastr-bs5-alert.scss'; */
+html{    
+    padding: 0;
+    height: 100%;
+    background: #1B1B1B;
+  }
+  body {
+    overflow-y: visible;
+    height: 100vh; 
+    background-image: url('./assets/logoBG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
+    background-size: 120px auto;
+  }
+
+  body{
+    background-color: #1B1B1B;
+    height: 100vh; 
+    overflow-y: hidden;
+  }
+  :root{
+    --bs-body-font-family: 'Montserrat';
+    
+    --sidenav-width: 300px;
+    
+  }
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  .login,
+  .sign-up {
+    background-color: #0079D3;
+    border-color: #0079D3;
+    color: aliceblue;
+    fill: #0079D3;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    
+    padding: 3px 16px;
+    opacity: 1;
+  }
+  .input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none; 
+  }
+  .dropdown-menu .dropdown-menu.show {
+    top: 40px !important;
+    left: -50px !important;
+}
+.editor{
+  background-color: #181818;
+
+}
+.tox-editor-container {
+  background-color: transparent;
+}
+.mce-content-body {
+  background-color: transparent;
+}

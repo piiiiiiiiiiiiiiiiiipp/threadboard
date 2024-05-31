@@ -1,0 +1,145 @@
+:host {
+    min-height: 100vh;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sidenav {
+    height: 100vh;
+    width: var(--sidenav-width);
+
+
+    background-color: #181818;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    flex-grow: 1;
+  
+    padding: 1rem;
+  }
+main{
+    background-color: #1B1B1B;
+}
+.threadboard-text{      
+    font-family: 'Genovast', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/genovast');
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 107.67px;
+    text-align: left;
+    height: auto;
+    width: 424px;    
+    color: #fff;
+}
+.logo{
+    text-decoration: none;
+}
+.container-fluid{
+     min-height: 100vh;
+     width: auto;
+     
+}
+.threadboard-icon-img{
+    width: auto;
+    height: 200px;
+    opacity: 0px;
+}
+.row{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.col-6{
+    width: 73%;
+  min-width: 60%;
+  flex-grow: 1;
+}
+.row-2{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 70px;
+}
+.col-lg-2{
+    width: 20%;
+    background-color:   #151515;
+}
+.bi bi-person-square{
+    justify-self: center;
+}
+.btn-outline-success {
+    color: #31F188;
+    border-color: #31F188;
+    width: 234px;
+    height: auto;
+    border-radius: 22.5px !important;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 20px;
+
+  }
+  .btn-group-vertical{
+    flex-direction: column;
+    align-items: end;
+  }
+
+  #but2.btn-outline-success{
+    color: #fff;
+    border-color: #fff;
+  }
+  #but3.btn-outline-success{
+    color: #fff;
+    border-color: #fff;
+  }
+  #buttons.row-2{
+    flex-direction: column;
+    align-items: end;
+    margin-top: 450px;
+  }
+  .btn-outline-success:hover {
+    background-color: #31F188;
+    color: white;
+  }
+
+  .buttons{
+    margin-top: 150px;
+  }
+ 
+.image{
+
+    height: 100vh;
+    display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.col{
+    width: 90px;
+    flex-grow: 0.1;
+}
+.rectangle{
+    margin-top: 270px;
+    justify-self: flex-end;
+    margin-left: -9px;
+}
+@media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 73%;
+    }
+}
+.form-control{
+    width: 230px;
+    border-radius: 23px;
+    border: 0.8px solid;
+
+    height: 30px;
+    background-color: transparent;
+    font-size: 10px;
+    padding-left: 175px;
+    padding-right: 3px;
+    
+}
+.input{
+    padding-left: 50px;
+}

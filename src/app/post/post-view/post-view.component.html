@@ -1,0 +1,54 @@
+<app-header></app-header>
+<style> body{
+  overflow-y: visible !important;
+}</style>
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="row post">
+          <div class="col-md-1">
+            <app-vote-button [post]="post"></app-vote-button>
+          </div>
+          <div class="col-md-11">
+            <span>
+              <span class="subthread-text"><a class="post-url" href="">{{post.subthreadName}}</a></span>
+              <span> . Запостил (-а)
+                             
+                <a class="username" href="">{{post.username}}</a><span> {{post.duration}} </span> 
+              </span>
+            </span>
+          <div>
+            <a routerLink="post.url" class="post-title">{{post.postName}}</a>
+          </div>
+            <div>
+              <p class="post-text" [innerHtml]="post.description"></p>
+            </div>
+            <div class="post-comment">
+              <form [formGroup]="commentForm" (ngSubmit)="postComment()">
+                <div class="form-group">
+                  <textarea class="form-control" [formControlName]="'text'" placeholder="Что думаешь?"></textarea>
+                </div>
+                <button type="submit" class="comment float-right">Коментить</button>
+              </form>
+            </div>
+            <div style="margin-top: 60px;" *ngFor="let comment of comments">
+              <div class="comment">
+                <div class="username">
+                  <a routerLink="/user/comment.username">{{comment.username}}</a>
+                </div>
+                <div>
+                  <p>{{comment.duration}}</p>
+                </div>
+                <b>{{comment.text}}</b>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <app-side-bar></app-side-bar>
+        <app-subthread-side-bar></app-subthread-side-bar>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,30 @@
+<!-- <main>
+<div class="container ml-4 align-self-sd-start align-self-md align-self-ld-end">
+    <div class="icon">
+      <a aria-label="Home" class="logo" routerLink="/">
+        <img src=".\assets\logo1.png" alt="Threadboard Logo" class="threadboard-icon-img">
+      </a>
+    </div>
+    <h2 class="threadboard-text" id="threadboard-text">threadboard</h2>
+    <div class="btn-group-vertical">
+      <button type="button" class="btn btn-outline-success mb-2" routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page">Войти в мир</button>
+      <button type="button" class="btn btn-outline-success mb-2"routerLink="/sign-up" routerLinkActive="active" ariaCurrentWhenActive="page">Новенький?</button>
+      <button type="button" class="btn btn-outline-success" routerLink="/sign-up" routerLinkActive="active" ariaCurrentWhenActive="page">Да, я потерял ноут</button>
+    </div>
+  </div>
+</main> -->
+<app-header></app-header>
+<div class="thread-body">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-9">
+        <app-post-tile [posts]="posts"></app-post-tile>
+      </div>
+      <div class="col-md-3">
+        <app-side-bar></app-side-bar>
+        <app-subthread-side-bar></app-subthread-side-bar>
+      </div>
+    </div>
+  </div>
+</div>

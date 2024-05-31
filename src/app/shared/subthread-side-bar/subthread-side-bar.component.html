@@ -1,0 +1,14 @@
+<div class="sidebar-view-subthread">
+    <div style="color: aliceblue; font-weight: bold; padding-top: 5px;"> Сабтреды</div>
+    
+    <span *ngFor="let subthread of subthreads" class="threads">
+        <ul>
+            <li>
+        <span class="subthread-text"><a href="/view-subthread/{{subthread.id}}" class="thread">{{subthread.name}}</a></span>
+            </li>
+    </ul>
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/subthreads">Посмотреть все</a>
+    </div>
+</div>

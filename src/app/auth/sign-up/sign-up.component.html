@@ -1,0 +1,60 @@
+ <div class="login-section">
+    <div class="container ml-4 align-self-sd-start align-self-md align-self-ld-end">
+        <div class="icon">
+          <a aria-label="Home" class="logo" routerLink=' '>
+            <img src=".\assets\LogoSignup.png" alt="Threadboard Logo" class="threadboard-icon-img">
+          </a>
+        </div>
+        <h2 class="threadboard-text" id="threadboard-text">threadboard</h2>
+        <form [formGroup]="signupForm" (ngSubmit)="signup()" class="form-container">
+            <div class="form-group row">
+                <label for="email_address" class="form-name">
+                    Почта
+                </label>
+                <div class="col-md-6">
+                    <input type="text" [formControlName] ="'email'" id="email_address" this.hideFocus = true; class="form-control" style=" outline: none;
+                    box-shadow: none;" name="email-address" required>
+                        <span *ngIf="!signupForm.get('email')?.valid && signupForm.get('email')?.touched" class="form-incorrect">
+                            Введите правильную почту, пожалуйста (◎ ◎)ゞ
+                        </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="form-name">Ник-нейм</label>
+                <div class="col-md-6">
+                    <input type="text" [formControlName] ="'username'" style=" outline: none;
+                    box-shadow: none;" class="form-control" required >
+                    <span *ngIf="!signupForm.get('username')?.valid && signupForm.get('username')?.touched" class="form-incorrect">
+                        Введите нормальный ник-нейм, пожалуйста (◎ ◎)ゞ
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="password" class="form-name">Секретный код</label>
+                <div class="col-md-6">
+                    <input type="password" [formControlName] ="'password'" style=" outline: none;
+                    box-shadow: none;"  id="password" class="form-control" name="password" required>
+                    @if (signupForm.get('password')?.touched && !signupForm.get('password')?.valid) {
+                    <span class="form-incorrect">
+                        Введите нормальный секретный код, пожалуйста (◎ ◎)ゞ
+                    </span>} 
+                </div>
+                <div class="col-md-4">
+                <span class="form-button">
+                        <button type="submit" class="sign-up">
+                        Начаааааааааааааaaaaaaaaaaaaaaaaaaaaaaaaaть?
+                        </button>
+                       
+                    </span></div>
+            </div>
+                <div class="col-md-6 p-0">
+                    <span style="color: aliceblue; font-size: 14px;">Уже был в мире?<a routerLink="/login" routerLinkActive="active" class="sign-up-link"> Войти в мир</a></span>
+                </div>
+            
+        </form>
+    </div>
+</div>
+
+

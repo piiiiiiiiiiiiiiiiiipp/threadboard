@@ -1,0 +1,99 @@
+body{
+    background-color: #1B1B1B;
+    height: 100vh; 
+    background-image: url('../../../assets/BG.png') !important;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-blend-mode: soft-light;
+    background-size: 40%;
+    overflow-y: hidden;
+    text-decoration: none;
+    color:#fff;
+  }
+.bodydiv{
+    color: #181818;
+    backdrop-filter: blur(8px) opacity(90%) !important;
+  }
+  .btnCreatePost,
+.btnCreateSubthread {
+  margin-top: 5px;
+}
+
+.post-form {
+  margin: 2px;
+  border-radius: 22.5px !important;
+
+}
+
+.comment-notification {
+  margin-top: 5px;
+}
+
+.create-post-container {
+    margin-left: 300px;
+
+  margin-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  color: #878A8C;
+  position: relative;
+  border-radius: 22.5px !important;
+  padding: 5px;
+}
+
+.btnDiscard {
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 22.5px !important;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 244px;
+    height: 34px;
+    margin-top: 5px;
+    color: #31F188;
+    background-color: transparent;
+  }
+
+.create-post-heading {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: aliceblue;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.btnCreatePost {
+    background-color: #31F188;
+    border-color: #31F188;
+    color: #181818;
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 22.5px !important;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    width: 244px;
+    height: 34px;
+    margin-left: 30px;
+  }
+  .editor{
+    background-color: #181818;
+  }

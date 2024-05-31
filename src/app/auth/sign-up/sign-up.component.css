@@ -1,0 +1,243 @@
+/* .register-section{
+
+}*/
+
+.sign-up-section {
+  padding: 11%;
+    width: 100vw;
+    max-width: 100%;
+    height: 90%;
+    vertical-align: middle !important;
+}
+.icon{
+  max-width: 500px;
+}
+.ml-4{
+  max-width: 100vw;
+}
+.form-group.row{
+  max-width: 800px;
+}
+.container{
+  max-width: 900px;
+}
+body{
+  z-index: 1000 !important;
+  background-color: #1B1B1B;
+  height: 100vh; 
+  background-image: url('../../../assets/BG.png') !important;
+  background-repeat: no-repeat;
+  background-position: 1250px;
+  background-blend-mode: soft-light;
+  background-size: 40%;
+  overflow-y: hidden;
+  text-decoration: none;
+  color:#fff;
+
+}
+.bodydiv{
+  color: #181818;
+  backdrop-filter: blur(1px) opacity(90%) !important;
+}
+:root{
+    --bs-btn-font-weight: 700;
+    --bs-btn-font-size: 14px;
+    --bs-btn-font-family:'Montserrat';
+    --bs-body-font-family: 'Montserrat';
+}
+
+.registr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.sign-up {
+    background-color: transparent;
+    border-color: #31F188;
+    color: #31F188;
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .7px;
+    padding: 3px 16px;
+    opacity: 1;
+    font-weight: 800;
+    line-height: 20px;
+    margin-bottom: 10px;
+    height: 37.6px;
+  } 
+  .form-control, form-select{
+    background-color: var(--bs-body-bg);
+  }
+
+  .form-control {
+    margin-bottom: 10px;
+    background-color: #1b1b1b !important;
+    font-style: aliceblue;
+    width: 391px;
+    max-width: 430px;
+    border: 1px solid #404040;
+border-radius: 23px;
+  }
+  .col-md-4{
+    max-width:470px;
+    margin-left:  7.5rem;
+  }
+  .link{
+    cursor: pointer;
+  }
+  .form-control .ng-touched {
+    background-color: #1b1b1b !important;
+    color: aliceblue;
+  }
+  .input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none; 
+    background-color: var(--bs-body-bg);
+  }
+  .form-name {
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+
+  .form-incorrect {
+    display:block;
+    width: 500px;
+    font-size: 11px;
+    color: red;
+  }
+
+  .threadboard-text{      
+    font-family: 'Genovast', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/genovast');
+    font-size: 76px;
+    font-weight: 400;
+    line-height: 107.67px;
+    text-align: left;
+    height: 100px;
+    width: 400px;    
+    color: #fff;
+}
+.threadboard-icon-img{
+    height: 200px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none; 
+    font-style: normal;
+    font-weight: 100;
+    border-color:#31F188 ;
+  }
+.form-control{
+    box-shadow:none;
+    box-sizing: border-box;
+    width: 591px;
+    background-color: #1b1b1b;
+    border: 1px solid #404040;
+    border-radius: 23px;
+    color: aliceblue;
+}
+.form-control:focus {
+  border-color: #31F188 ;
+}
+.col-md-6.p-0{
+  color: aliceblue;
+  font-size: 14px;
+  padding: 0;
+  opacity:40%;
+}
+.col-md-6.p-0:hover{
+  opacity: 100%;
+}
+
+.btn-outline-success {
+    border-color: #31F188;
+    width: 234px;
+    height: auto;
+    border-radius: 22.5px !important;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24 px;
+  }
+
+  
+  .btn-outline-success:hover {
+    background-color: #31F188;
+    color: white;
+  }
+  
+  a.sign-up-link{ 
+    font-weight: 200;
+    color :#31F188;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+  }
+
+  @media (min-width: 576px) {
+    .ml-4{
+        margin-left: 0rem !important;
+    }
+    .btn-group-vertical{
+        flex-grow: auto;
+    }
+    .threadboard-text{
+        font-size: 20px;
+    }
+    .btn-outline-success {
+        border-color: #31F188;
+        width: auto;
+        height: auto;
+        border-radius: 22.5px !important;
+
+      }
+}
+@media (min-width: 768px) {
+    .ml-4{
+        margin-left: 0rem !important;
+    }
+    .btn-group-vertical{
+        flex-grow: auto;
+    }
+    .threadboard-text{
+        font-size: 20px;
+    }
+} 
+@media (min-width: 992px) {
+    .ml-4{
+        margin-left: 0rem !important;
+    }
+    .btn-group-vertical{
+        flex-grow: auto;
+    }
+} 
+@media (min-width: 1200px) {
+    .ml-4{
+        margin-left: 22rem !important;
+    }
+    .threadboard-text{
+        font-size: 76px;
+    }
+    .btn-outline-success {
+    
+        border-color: #31F188;
+        width: 234px;
+        height: auto;
+        border-radius: 22.5px !important;
+        
+    
+      }
+}
+

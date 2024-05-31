@@ -1,0 +1,121 @@
+header{
+    border-radius: 1px solid;
+}
+.thread-icon-svg{
+    height: 40px;
+    padding: 8px 8px 8px 0;
+    width: 40px;
+}
+.navbar{
+    background-color: #181818 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.thread-text{        
+    font-weight: 400;
+    height: 40px;
+    width: 40px; 
+    font-family: 'Genovast';  
+    text-decoration: none;
+    color: aliceblue; 
+}
+.logo{
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.logoimg{
+    margin-bottom: 6px
+}
+.login, .signup{    
+    background-color: transparent;
+    border-color: #31F188;
+    border: 1px solid #31F188;
+    color: #31F188;
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;  
+    float: right;
+}
+
+.sign-up{
+    background-color: #31F188;
+    border-color: #31F188;
+    color: aliceblue;
+}
+
+.sign-up:hover{
+    opacity: 0.6;
+}
+
+.userdetails{    
+    background-color: transparent;
+    border-color: #31F188;
+    color: #31F188;
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    border: 0px;
+    float: right;
+}
+
+.userdetails:hover{
+    border: 1px solid;
+}
+.menu{
+    float: right;
+}
+.dropdown-item{
+    background-color: #181818;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-item:hover{
+    background-color: #1c1c1c;
+}
+
+.dropdown-menu{
+    background-color: #181818;
+    float: right;
+}
+.dropdown-menu .dropdown-menu.show {
+    top: 40px !important;
+    left: -50px !important;
+}
+.account-icon{
+    border-radius: 4px;
+    float: left;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+    margin-top: 4px;
+}

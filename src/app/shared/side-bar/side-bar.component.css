@@ -1,0 +1,56 @@
+.sidebar{
+    width: 312px;
+    height: 242px;
+    --post-line-color: #404040;    
+    /* border: 1px solid #404040; */
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #1b1b1b;
+    color: #141414;
+    position: relative;
+    border-radius: 23px;
+    padding:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+}
+
+.btnCreatePost, .btnCreateSubthread{
+     border-radius: 22.5px !important;
+    background-color: transparent;
+    color: #fff;
+    fill: #1b1b1b;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;    
+    opacity: 1;
+    width: 288px;
+    height: 34px;
+}
+
+.btnCreateSubthread{
+    margin-top: 5px;
+    color: #31F188;
+    border-radius: 22.5px !important;
+    background-color: transparent;
+    border-color: #31F188;
+    border: 1px solid #31F188;
+}
+
+.sidebar>ul>li{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1b1b1b;
+}
+/* .logo{
+    width: 
+} */
