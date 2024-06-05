@@ -15,13 +15,12 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getAllPosts(): Observable<Array<PostModel>> {
-    return this.http.get<Array<PostModel>>('http://localhost:8080/api/posts/');
+    return this.http.get<Array<PostModel>>('http://localhost:8080/api/posts');
   }
   
   createPost(postPayload: PostCreatePayload): Observable<any> {
-    let token = localStorage.getItem('ngx-webstorage|authenticationtoken')
-    token ="Bearer " + token?.substring(1,token.length - 1)
-    return this.http.post('http://localhost:8080/api/posts/', postPayload, {headers: new HttpHeaders({ 'Authorization' : token}) });
+
+    return this.http.post('http://localhost:8080/api/posts', postPayload);
   }
 
   getPost(id: number): Observable<PostModel> {
@@ -29,11 +28,13 @@ export class PostService {
   }
 
   getAllPostsByUser(name: string): Observable<PostModel[]> {
-    let token = localStorage.getItem('ngx-webstorage|authenticationtoken')
-    token ="Bearer " + token?.substring(1,token.length - 1)
-    return this.http.get<PostModel[]>('http://localhost:8080/api/posts/by-username/' + name,{headers: new HttpHeaders({ 'Authorization' : token}) });
+
+    return this.http.get<PostModel[]>('http://localhost:8080/api/posts/by-username/' + name);
   }
   
+  getAllPostsBySubthread(subthreadId: number): Observable<PostModel[]>{
+    return this.http.get<PostModel[]>('http://localhost:8080/api/posts/by-subthread/' + subthreadId)
+  }
 }
 
 

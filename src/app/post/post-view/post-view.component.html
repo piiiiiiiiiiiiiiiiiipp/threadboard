@@ -34,12 +34,12 @@
             <div style="margin-top: 60px;" *ngFor="let comment of comments">
               <div class="comment">
                 <div class="username">
-                  <a routerLink="/user/comment.username">{{comment.username}}</a>
+                  <a routerLink ="/user-profile/{{comment.username}}" routerLinkActive="active" >{{comment.username}}</a>
                 </div>
-                <div>
+                <div class="comment-duration">
                   <p>{{comment.duration}}</p>
                 </div>
-                <b>{{comment.text}}</b>
+                <p class="comment-text">{{comment.text}}</p>
               </div>
               
             </div>

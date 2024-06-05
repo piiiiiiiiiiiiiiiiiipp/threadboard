@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpErrorResponse } from '@angular/common/http';
-import { Observable, BehaviorSubject, throwError } from 'rxjs';
-import { AuthService } from './auth/shared/auth.service';
-import { catchError, switchMap, take, filter } from 'rxjs/operators';
-import { LoginResponse } from './auth/login/login-response.payload';
+import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpErrorResponse } from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { BehaviorSubject, Observable, catchError, throwError, switchMap, filter, take } from "rxjs";
+import { LoginResponse } from "./auth/login/login-response.payload";
+import { AuthService } from "./auth/shared/auth.service";
 
-@Injectable({   
+
+@Injectable({
     providedIn: 'root'
 })
 export class TokenInterceptor implements HttpInterceptor {
@@ -26,7 +26,7 @@ export class TokenInterceptor implements HttpInterceptor {
         if (jwtToken) {
             return next.handle(this.addToken(req, jwtToken)).pipe(catchError(error => {
                 if (error instanceof HttpErrorResponse
-                    && error.status === 403) {
+                    && error.status === 401) {
                     return this.handleAuthErrors(req, next);
                 } else {
                     return throwError(error);
@@ -70,5 +70,13 @@ export class TokenInterceptor implements HttpInterceptor {
                 'Bearer ' + jwtToken)
         });
     }
+    // isTokenExpired(): boolean {
+    //     const expiryTime: number = this.getExpiryTime();
+    //     if (expiryTime) {
+    //       return ((1000 * expiryTime) - (new Date()).getTime()) < 5000;
+    //     } else {
+    //       return false;
+    //     }
+    //   }
 
 }

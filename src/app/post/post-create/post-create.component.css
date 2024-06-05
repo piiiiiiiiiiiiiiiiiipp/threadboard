@@ -1,18 +1,19 @@
-body{
+#body{
     background-color: #1B1B1B;
     height: 100vh; 
     background-image: url('../../../assets/BG.png') !important;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left -214px bottom -220px;;
     background-blend-mode: soft-light;
     background-size: 40%;
-    overflow-y: hidden;
     text-decoration: none;
     color:#fff;
   }
+
+  
 .bodydiv{
     color: #181818;
-    backdrop-filter: blur(8px) opacity(90%) !important;
+    backdrop-filter: blur(15px) opacity(90%) !important;
   }
   .btnCreatePost,
 .btnCreateSubthread {
@@ -22,15 +23,32 @@ body{
 .post-form {
   margin: 2px;
   border-radius: 22.5px !important;
+  width: 582px; 
+  background-color: transparent;
+}
+.form-control{
+  background-color: transparent;
+  border-radius: 22.5px !important;
+  border-color: #404040; 
+  font-size:14px;
 
 }
-
+.float-right{
+  margin-left: 34px;
+}
 .comment-notification {
   margin-top: 5px;
 }
-
+body {
+  background-color: #181818 !important    ;
+}
+.tox-tinymce {
+  border: 1px solid #404040;
+  border-radius: 10px;
+}
 .create-post-container {
     margin-left: 300px;
+    border-color: #404040; 
 
   margin-top: 10px;
   margin-top: 10px;
@@ -42,7 +60,18 @@ body{
   border-radius: 22.5px !important;
   padding: 5px;
 }
-
+.text{
+  font-size:12px;
+   width: 582px; 
+   margin-top: 5px; 
+   height: 32vh;    
+  border-radius: 22.5px !important; 
+  border-color: #404040; 
+  padding-top: 15px; 
+  padding-left: 10px; 
+  background-color: transparent; 
+  padding-right: 10px;
+}
 .btnDiscard {
     fill: #31F188;
     border: 1px solid;
@@ -66,7 +95,7 @@ body{
 
 .create-post-heading {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700 !important;
   line-height: 22px;
   color: aliceblue;
   -ms-flex: 1;
@@ -95,5 +124,6 @@ body{
     margin-left: 30px;
   }
   .editor{
+    margin-top: 10px;
     background-color: #181818;
   }

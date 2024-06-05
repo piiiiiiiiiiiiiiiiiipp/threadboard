@@ -12,6 +12,7 @@ header{
 body{
     font-family: 'Montserrat';
     color: aliceblue;
+    overflow-y: visible !important;
 }
 .container-fluid{
     height: 55px;
@@ -32,15 +33,6 @@ body{
     opacity: 0px;
 }
 
-.my-5{
-    /* margin-top: 11.9375rem;
-    margin-bottom: 9.3125rem; */
-    margin-left: 22rem !important;
-}
-/* .container{
-    margin-right: auto;
-    margin-left: 22rem !important; ;
-} */
 
 .threadboard-text{      
     font-family: 'Genovast', sans-serif;

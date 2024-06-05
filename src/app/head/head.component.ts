@@ -26,7 +26,7 @@ export class HeadComponent implements OnInit {
   }
 
   goToUserProfile() {
-    this.router.navigateByUrl('/user-profile/' + this.username);
+    this.router.navigateByUrl('/my-profile/' + this.username);
   }
 
   logout() {

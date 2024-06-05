@@ -53,9 +53,26 @@ header{
 }
 
 .sign-up{
-    background-color: #31F188;
+    background-color: transparent;
     border-color: #31F188;
-    color: aliceblue;
+    border: 1px solid #31F188;
+    color: #31F188;
+    fill: #31F188;
+    border: 1px solid;
+    border-radius: 22.5rem !important;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;  
+    float: right;
+
 }
 
 .sign-up:hover{

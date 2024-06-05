@@ -60,7 +60,7 @@ export class VoteButtonComponent implements OnInit {
       throwError(error);
     });
   }
-
+  
   private updateVoteDetails() {
     this.postService.getPost(this.post.id).subscribe(post => {
       this.post = post;

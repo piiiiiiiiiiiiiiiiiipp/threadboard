@@ -14,9 +14,13 @@ export class SubthreadService {
   }
 
   createSubthread(SubthreadModel: SubthreadModel): Observable<SubthreadModel> {
-    let token = localStorage.getItem('ngx-webstorage|authenticationtoken')
-    token ="Bearer " + token?.substring(1,token.length - 1)
+
     return this.http.post<SubthreadModel>('http://localhost:8080/api/subthread',
-    SubthreadModel,{headers: new HttpHeaders({ 'Authorization' : token}) });
+    SubthreadModel);
   }
+  
+  getSubthreadById(subthreadId: number): Observable<SubthreadModel>{
+    return this.http.get<SubthreadModel>('http://localhost:8080/api/subthread/' + subthreadId);
+  }
+
 }

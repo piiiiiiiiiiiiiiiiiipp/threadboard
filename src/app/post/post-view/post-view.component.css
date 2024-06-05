@@ -6,9 +6,32 @@
     color: aliceblue;
   }
   
-  .body{
+  #body{
     overflow-y: visible !important;
+  
+    background-color: #1B1B1B;
+    height: 100%;
+    max-height: 5000px ; 
+    background-image: url('../../../assets/BG.png') !important;
+    background-repeat: no-repeat;
+    background-position: left -214px bottom -220px;;
+    background-blend-mode: soft-light;
+    background-size: 40%;
+    text-decoration: none;
+    color:#fff;
     
+    
+  }
+  html{
+    background-color: #1B1B1B;
+    height: 100%; 
+    background-image: url('../../../assets/BG.png') !important;
+    background-repeat: no-repeat;
+    background-position: left -214px bottom -220px;;
+    background-blend-mode: soft-light;
+    background-size: 40%;
+    text-decoration: none;
+    color:#fff;
   }
   .post-title:hover {
     opacity: 0.6;
@@ -55,7 +78,7 @@
   }
   
   .comment{    
-      border: 1px solid #404040;    
+      border: 1px solid #404040;   
       margin-bottom: 10px;
       overflow: hidden;
       background-color: transparent;
@@ -64,9 +87,21 @@
       margin-top: 20px;
       position: relative;
       border-radius: 22.5px !important;
-      padding:5px;
+      padding: 10px;
+      max-width: 300px;
       width: 288px;
+      height: auto;
+      word-break: break-all;
   }
   .form-control{
     height: 25vh;
+    background-color: transparent;
+  }
+  .comment-duration{
+    font-size: 14px;
+  }
+  .comment-text{
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 200 !important;
   }

@@ -6,18 +6,23 @@ import { ToastrModule, provideToastr } from 'ngx-toastr';
 import { ElementRef, importProvidersFrom } from '@angular/core';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { TokenInterceptor } from './app/token-interceptor';
-import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { provideAngularSvgIcon } from 'angular-svg-icon';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { routes } from './app/app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';;
 
 bootstrapApplication(AppComponent, {
   providers: [ 
     { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' },
+      {
+        provide: HTTP_INTERCEPTORS,
+        useClass: TokenInterceptor,
+        multi: true
+      },
     importProvidersFrom(
       Router,
       ReactiveFormsModule,
@@ -28,6 +33,7 @@ bootstrapApplication(AppComponent, {
       BrowserAnimationsModule, 
       TokenInterceptor,
       HttpClientModule,
+      EditorModule,
       // NgxsResetPluginModule.forRoot(),
       // // devtools always last
       // NgxsReduxDevtoolsPluginModule.forRoot()

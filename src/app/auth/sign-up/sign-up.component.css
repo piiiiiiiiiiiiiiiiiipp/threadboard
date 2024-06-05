@@ -21,7 +21,7 @@
 .container{
   max-width: 900px;
 }
-body{
+#body{
   z-index: 1000 !important;
   background-color: #1B1B1B;
   height: 100vh; 

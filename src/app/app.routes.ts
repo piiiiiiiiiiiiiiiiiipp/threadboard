@@ -8,6 +8,8 @@ import { AuthGuard } from './auth/auth.guard';
 import { ListSubthreadsComponent } from './subthread/list-subthreads/list-subthreads.component';
 import { HeadComponent } from './head/head.component';
 import { UserProfileComponent } from './auth/user-profile/user-profile.component';
+import { MyProfileComponent } from './auth/my-profile/my-profile.component';
+import { ViewSubthreadComponent } from './subthread/view-subthread/view-subthread.component';
 
 export const routes: Routes = [
   {
@@ -19,9 +21,11 @@ export const routes: Routes = [
       ]
   },
   // <a routerLink="/view-subthread/{{subthread.id}}">{{subthread.name}}</a>
-  { path: 'view-subthread/:id', canActivate:[AuthGuard], component: ListSubthreadsComponent},
+  { path: 'view-subthread/:id', canActivate:[AuthGuard], component: ViewSubthreadComponent},
   { path: 'view-post/:id', component: PostViewComponent, canActivate: [AuthGuard],},
-  { path: 'user-profile/:name', component: UserProfileComponent },
+  { path: 'user-profile/:name', component: UserProfileComponent, canActivate: [AuthGuard]},
+  { path: 'my-profile/:name', component: MyProfileComponent, canActivate: [AuthGuard]},
+
   { path: 'list-subthreads', loadComponent: () => import('./subthread/list-subthreads/list-subthreads.component').then((m) => m.ListSubthreadsComponent),},
   { path: 'create-post', component: postCreateComponent, canActivate:[AuthGuard]},
   { path: 'create-subthread', component: CreateSubthreadComponent, canActivate: [AuthGuard], },

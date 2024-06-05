@@ -23,4 +23,23 @@ export class AuthGuard implements CanActivate {
     }
     return true;
   }
+  //  canActivate(
+  //   next: ActivatedRouteSnapshot,
+  //   state: RouterStateSnapshot): Observable | Promise | boolean {
+  //     if (this.authService.) {
+  //         if (this.authService.isTokenExpired()) {
+  //           // Should Redirect Sig-In Page
+  //         } else {
+  //           return true;
+  //         }
+  //     } else {
+  //       return new Promise((resolve) => {
+  //         this.loginService.signIncallBack().then((e) => {
+  //            resolve(true);
+  //         }).catch((e) => {
+  //           // Should Redirect Sign-In Page
+  //         });
+  //       });
+  //     }
+  // }
 }

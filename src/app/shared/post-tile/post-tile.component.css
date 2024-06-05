@@ -10,13 +10,9 @@
     border-radius: 23px;
     padding: 15px;
     text-decoration: none;
+    max-width: 650px;
 }
 
-hr {
-    color: #404040;
-    opacity: 30%;
-    margin: 10px 0 !important;
-}
 .login{
     margin-left: 15px;
     color: #31F188;
@@ -40,7 +36,7 @@ hr {
 }
 
 .post-title{
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
     opacity: 1;
 }
@@ -65,55 +61,9 @@ a.username{
 }
 .post-text{
     margin-top: 10px;
+    font-size: 14px;
+    color: aliceblue;
 }
 .durationspan{
     font-size: 14px;
 }
-/* .post {
-    background-color: #181818;
-    border-radius: 5px;
-    margin-bottom: 15px;
-  }
-  
-  .post-content {
-    padding: 15px;
-    color: #FFFFFF;
-  }
-  
-  .post-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .post-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
-  }
-  
-  .post-text {
-    color: #404040;
-  }
-  
-  .post-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .btnCommments {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .login {
-    background-color: #31F188;
-    border-color: #31F188;
-    color: #111111;
-  }
-  
-  .login:hover {
-    background-color: #27d47a;
-    border-color:#404040
-} */

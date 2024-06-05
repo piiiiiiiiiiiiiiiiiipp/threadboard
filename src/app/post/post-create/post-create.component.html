@@ -1,7 +1,6 @@
 <app-header></app-header>
 <div class="container">
     <div class="row">
-      
       <div class="create-post-container col-md-9">
         <form [formGroup]="postCreateForm" class="post-form" (ngSubmit)="postCreate()">
           <div class="form-group">
@@ -16,28 +15,29 @@
               <option *ngFor="let subthread of subthreads">{{subthread.name}}</option>
             </select>
   
-            <editor apiKey="deeepb3sdyrjg6e9zucqrhhiu499ldi3im3e0ed21yjg0ekw"  [formControlName]="'description'" [init]="{
-                        autoresize_bottom_margin: 50,
-                        height: 300,
-                        content_style: '.tox-editor-header{background-color: #1b1b1b; color:aliceblue;}',
+            <editor apiKey="deeepb3sdyrjg6e9zucqrhhiu499ldi3im3e0ed21yjg0ekw" class="editor" [formControlName]="'description'" [init]="{
                         license_key: 'gpl',
+                        selector: 'editor',
+                        base_url: '/tinymce',
+                        suffix: '.min',
+                        autoresize_bottom_margin: 50,
+                        theme: 'silver',
+                        format: 'text',
+                       
+                        height: 300,
+                        cleanup : true,
                         menubar: false,
-                        plugins: [
-                          'link', 'paste', 'table','**autoresize**',
-                          'advlist autolink lists link image charmap print preview anchor',
-                          'searchreplace visualblocks code fullscreen',
-                          'insertdatetime media table paste code help wordcount'
-                        ],
-                        toolbar:
-                          'undo redo | formatselect | bold italic backcolor | \
-                          alignleft aligncenter alignright alignjustify | \
-                          bullist numlist outdent indent | removeformat | help',
+                        skin: 'oxide-dark',
+                        content_css: 'styles.css',
+                        plugins: 'preview importcss searchreplace autolink autosave save directionality code visualblocks visualchars fullscreen image link media codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists wordcount help charmap quickbars emoticons accordion',
+                        toolbar: 'undo redo | accordion accordionremove | blocks fontfamily fontsize | bold italic underline strikethrough | align numlist bullist | link image | table media | lineheight outdent indent| forecolor backcolor removeformat | charmap emoticons | code fullscreen preview | save print | pagebreak anchor codesample | ltr rtl',
 
                       }"></editor>
+                      <!-- <textarea type="text" [formControlName]="'description'" class="text"     placeholder=" описание"></textarea> -->
             <span>
               <div style="margin-top: 5px" class="float-right">
                 <button (click)="discardPost()" class="btnDiscard">Отмена</button>
-                <button (click)="postCreate()" class="btnCreatePost">Создать</button>
+                <button  class="btnCreatePost">Создать</button>
               </div>
             </span>
           </div>

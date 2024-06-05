@@ -10,9 +10,8 @@ export class VoteService {
 
   constructor(private http: HttpClient) { }
   vote(votePayload: VotePayload): Observable<any> {
-    let token = localStorage.getItem('ngx-webstorage|authenticationtoken')
-    token ="Bearer " + token?.substring(1,token.length - 1)
 
-    return this.http.post('http://localhost:8080/api/votes/', votePayload, {headers: new HttpHeaders({ 'Authorization' : token}) });
+
+    return this.http.post('http://localhost:8080/api/votes/', votePayload);
   }
 }

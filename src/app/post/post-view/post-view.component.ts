@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { FormGroup, FormControl, Validators, ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { throwError } from 'rxjs';
 import { PostModel } from '../../shared/post-model';
 import { PostService } from '../../shared/post.service';
@@ -15,7 +15,7 @@ import { HeadComponent } from '../../head/head.component';
 @Component({
   selector: 'app-post-view',
   standalone: true,
-  imports: [VoteButtonComponent, SideBarComponent, SubthreadSideBarComponent, ReactiveFormsModule, CommonModule, HeadComponent],
+  imports: [VoteButtonComponent,RouterModule, SideBarComponent, SubthreadSideBarComponent, ReactiveFormsModule, CommonModule, HeadComponent],
   templateUrl: './post-view.component.html',
   styleUrl: './post-view.component.css',
   encapsulation: ViewEncapsulation.None,

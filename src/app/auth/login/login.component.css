@@ -4,7 +4,7 @@
     --bs-btn-font-family:'Montserrat';
     --bs-body-font-family: 'Montserrat';
 }
-body{
+#body{
     background-color: #1B1B1B;
     height: 100vh; 
     background-image: url('../../../assets/BG.png') !important;
@@ -22,11 +22,12 @@ body{
   }
 .login-failed{
     text-align: center;
-    margin: auto;
-    margin-top: 10px;
-    border: 2px solid black;
-    width: 65%;    
-    background-color: red;
+    margin-left: 56px !important;
+    margin-top: 20px;
+    width: 35%;    
+    /* background-color: red;
+    box-shadow: 0 0 20px 11px red;
+    border-radius: 22.5rem */
 }
 .form-label{
     margin-top: 10px;
@@ -38,6 +39,16 @@ body{
     margin-top: 5px;
     font-weight: bold;    
     color: aliceblue;
+}
+.login-failed-circle{
+    background-color: red;
+    box-shadow: 0 0 20px 11px red;
+    border-radius: 50%;
+    width: 20px;
+    position: relative;
+    top: -40px;
+    right: 14px;
+    height: 20px;
 }
 span{
     color: aliceblue;

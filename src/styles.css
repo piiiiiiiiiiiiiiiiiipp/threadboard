@@ -3,13 +3,21 @@
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 /* @import '../node_modules/ngx-toastr/toastr-bs5-alert.scss'; */
+
 html{    
     padding: 0;
     height: 100%;
     background: #1B1B1B;
   }
-  body {
-    overflow-y: visible;
+  .mce-content-body  {
+    background-color: #181818 !important    ;
+    color: aliceblue !important;
+    padding: 10px;
+  }
+  #body {
+    text-decoration: none !important;
+    color: aliceblue;
+    overflow-y: auto !important;
     height: 100vh; 
     background-image: url('./assets/logoBG.png');
     background-repeat: no-repeat;
@@ -17,15 +25,26 @@ html{
     background-blend-mode: normal;
     background-size: 120px auto;
   }
-
+  a{
+    text-decoration: none;
+    color: #f0f8ff;
+  }
+  
+  .tox-tinymce {
+    border: 1px solid #404040 !important;
+    border-radius: 10px;
+    
+}
+.tox-tbtn{
+  background-color: #1B1B1B !important;
+}
   body{
     background-color: #1B1B1B;
     height: 100vh; 
-    overflow-y: hidden;
   }
   :root{
     --bs-body-font-family: 'Montserrat';
-    
+    --bs-body-color: #f0f8ff;
     --sidenav-width: 300px;
     
   }
@@ -60,13 +79,40 @@ html{
     top: 40px !important;
     left: -50px !important;
 }
-.editor{
-  background-color: #181818;
+
+.tox-toolbar__primary
+{
+  background-color: #1B1B1B !important;
+}
+.tox-editor-header,.tox-editor-container{
+  background-color: #181818 !important;
+}
+.tox tox-tinymce{
+  background-color: #181818 !important;
+  border-color: #404040 !important;
+}
+.tox-edit-area{
+  background-color: #181818 !important;
 
 }
-.tox-editor-container {
-  background-color: transparent;
+.mce_content_body{
+  background-color: #181818 !important;
+
 }
-.mce-content-body {
-  background-color: transparent;
+.toast-error{
+  background-color: #404040 !important;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 0 10px 10px #404040 !important;
+  padding: 10px !important;
+  margin-top: 10px;
+  border-radius: 22.5rem !important;
+  background-image: none !important;
+  width: 250px !important;
 }
+.tox-statusbar{
+    background-color: transparent !important;
+  }
+
+ 
+/* body > div.bodydiv > app-root > app-post-create > div > div > div > form > div > editor > div > div.tox-statusbar > div.tox-statusbar__text-container.tox-statusbar__text-container-3-cols.tox-statusbar__text-container--flex-start */

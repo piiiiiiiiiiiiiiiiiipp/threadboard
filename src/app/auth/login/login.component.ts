@@ -40,9 +40,9 @@ ngOnInit(): void {
   this.activatedRoute.queryParams
   .subscribe(params => {
     if (params['registered'] !== undefined && params['registered'] === 'true') {
-      this.toastr.success('Signup Successful');
-      this.registerSuccessMessage = 'Please Check your inbox for activation email '
-        + 'activate your account before you Login!';
+      this.toastr.success('Signup Successful','Please Check your inbox for activation email '
+        + 'activate your account before you Login!');
+     
     }
   });
 }
@@ -58,7 +58,16 @@ login() {
     this.toastr.success('Login Successful');
   }, error => {
     this.isError = true;
+   
     throwError(error);
   });
 }
 }
+ // this.toastr.error("Не получилось ТТ", 'Попробуйте еще раз позже!',
+    // {
+    //   tapToDismiss: true,
+    //   easeTime : 300,
+    //   easing: 'ease-out',
+    //   timeOut: 9000
+    // }
+    // );

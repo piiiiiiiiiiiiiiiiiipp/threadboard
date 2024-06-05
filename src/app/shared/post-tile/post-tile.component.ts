@@ -1,8 +1,9 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, SimpleChanges, ViewEncapsulation } from '@angular/core';
 import { PostModel } from '../post-model';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { VoteButtonComponent } from '../vote-button/vote-button.component';
 import { CommonModule } from '@angular/common';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @Component({
     selector: 'app-post-tile',
@@ -10,7 +11,7 @@ import { CommonModule } from '@angular/common';
     templateUrl: './post-tile.component.html',
     styleUrl: './post-tile.component.css',
     encapsulation: ViewEncapsulation.None,
-    imports: [RouterLink, RouterLinkActive, CommonModule, VoteButtonComponent]
+    imports: [RouterLink, RouterLinkActive, CommonModule, VoteButtonComponent, EditorModule]
 })
 export class PostTileComponent {
 
@@ -19,6 +20,19 @@ export class PostTileComponent {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  postCount: number = 0;  
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['posts']) {
+      this.updatePostCount();
+    }
+  }
+  updatePostCount() {
+    this.postCount = this.posts ? this.posts.length : 0;
+  }
+
+  isPostCountGreaterThanThree(): boolean {
+    return this.postCount > 3;
   }
 
   goToPost(id: number): void {

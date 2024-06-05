@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h2>Subthreads</h2>
+        <ul style="list-style-type: none;">
+          <li>
+              <a routerLink="/view-subthread/{{id}}">{{name}}</a>
+              <div *ngIf="isAdmin()">
+                <button class="btn btn-danger" (click)="deleteSubthread(id)" >
+                  Delete subthread
+               </button>
+              </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        @if(posts){}
+        <div class="col-md-9">
+          <app-post-tile [posts]="posts"></app-post-tile>
+        </div>
+      </div>
+      <div class="col-md-3">
+      </div>
+    </div>
+</div>
